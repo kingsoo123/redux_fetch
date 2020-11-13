@@ -18,9 +18,7 @@ class List extends Component {
                 }
             )
     };
-
     render() {
-
         return (
             <div className="container">
                 <div className="card">
@@ -31,9 +29,16 @@ class List extends Component {
                         <p className="card-text">Password:{this.props.submitValues.password} </p>
                     </div>
                 </div>
-             
+                {this.props.users.map(user=>{
+                    return(
+                        <div key={user.id}>
+                            <li>
+                                {user.name}
+                            </li>
+                        </div>
+                        )
 
-                {JSON.stringify(this.props.users)}
+                })}
             </div>
         );
     }
