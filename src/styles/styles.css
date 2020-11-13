@@ -1,0 +1,95 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    background: #eff3f8;
+    padding-top: 150px;
+}
+
+.bgColor {
+    width: 60%;
+    background: #eff3f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    height: 100vh;
+
+
+}
+
+.welcome {
+    width: 90%;
+    background-color: #f9fbfd;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid rgb(223, 213, 213);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.form {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 7px;
+    outline: none;
+    border: 1px solid rgb(202, 205, 209);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.icon {
+    padding: 10px;
+    background: rgb(202, 205, 209);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-right: 1px solid rgb(202, 205, 209);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.forgot {
+    border: 1px solid rgb(202, 205, 209);
+    border-left: none;
+    text-align: center;
+    color: rgb(151, 144, 144);
+}
+
+.remember {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(202, 205, 209);
+}
+
+.log {
+    background-color: #007aff;
+    border: none;
+    width: 140px;
+    border-radius: 5px;
+    height: 45px;
+    color: white;
+}
+.me {
+    padding-top: 10px;
+}
+.user {
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
