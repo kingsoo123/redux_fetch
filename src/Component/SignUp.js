@@ -55,7 +55,7 @@ class SignUp extends Component{
                         </div>
 
                         <div>
-                            <button className="log" onClick={()=>{this.props.submit({email:this.state.email, password:this.state.password})}}><Link to={'/lists'}>Log in</Link></button>
+                            <Link to={'/lists'}><button className="log" onClick={()=>{this.props.submit({email:this.state.email, password:this.state.password})}}>Log in</button></Link>
                         </div>
                     </div>
                 </div>
