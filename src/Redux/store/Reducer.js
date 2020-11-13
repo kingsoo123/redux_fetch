@@ -15,7 +15,7 @@ const reducer = (state = initialState, action)=> {
         //console.log(action.payload);
 
         newState.users = action.payload;
-        console.log(newState.users);
+        //console.log(newState.users);
 
     }if(action.type === "HANDLE_CHANGE_PASSWORD"){
         //console.log(action.payload);

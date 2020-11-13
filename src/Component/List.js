@@ -11,18 +11,16 @@ class List extends Component {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(json =>  {
-                    console.log(json);
                    this.setState({
                        users : [...json]
-                   })
+                   });
+                this.props.listUsers(this.state.users);
                 }
             )
-    }
+    };
 
     render() {
-        const showMe = ()=>{
-            this.props.listUsers(this.state.users)
-        };
+
         return (
             <div className="container">
                 <div className="card">
@@ -33,7 +31,9 @@ class List extends Component {
                         <p className="card-text">Password:{this.props.submitValues.password} </p>
                     </div>
                 </div>
-                {console.log(showMe())}
+             
+
+                {JSON.stringify(this.props.users)}
             </div>
         );
     }
